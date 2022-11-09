@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100');
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+@keyframes anim {
+    0%{color: green}
+    40%{color: brown}
+    100%{color: black}
+}
+@keyframes ann{
+    0%{filter: drop-shadow(2px 0px 5px red);}
+    50%{filter: drop-shadow(2px 0px 5px purple);}
+   80%{filter: drop-shadow(2px 0px 5px pink);}
+   100%{filter: drop-shadow(2px 0px 5px red);}
+}
+@keyframes animatieD
+{
+    0%{font-size: 10px}
+    50%{font-size: 20px}
+    100%{font-size: 30px}
+}
+@keyframes animu{
+    0%{border:1px solid black;}
+    50%{border:2px solid green;}
+    100%{border:2px solid yellow;}
+}
+#more{
+    display:none;
+}
+#more1{
+    display:none;
+}
+#more2{
+    display:none;
+}
+#more3{
+    display:none;
+}
+.grid{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+}
+body{
+    background-color:black;
+}
+.grid>div{
+    background-color:rgb(52, 53, 56);
+    text-align:center;
+    padding:20px 0;
+    /* font-family: 'Roboto'; */
+    /* color:white; */
+    font-size: 30px;
+    filter:drop-shadow(2px 0px 5px red);
+}
+.card1 {
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+    height: 660px;
+    color:black;
+    text-shadow: 2px 1px #ff0000;
+    animation: animatieOO;
+    background-image: url(https://static.wikia.nocookie.net/creepypasta/images/7/73/2041557953_ea337ce1a9_z.jpg/revision/latest?cb=20121126033149);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-size:270%;
+    height:auto;
+    animation-duration: 3s;
+
+  }
+  .text1{
+      animation: anim;
+      animation-duration: 3s;
+  }
+  .card4{
+      /* width: 300px; */
+      text-shadow: 2px 1px blue;
+      animation: animatieOO;
+      animation-duration: 3s;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background-image:url(https://images.genius.com/6d6ddb8461a6277a7b61b84ab5a8cde6.1000x1000x1.png);
+      background-size: 230%;
+  }
+  .card3{
+    text-shadow: 2px 1px purple;
+    animation: animatieOO;
+    animation-duration: 3s;
+    background-image: url(https://www.publicdomainpictures.net/pictures/40000/velka/scary-woods.jpg);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .card2{
+    text-shadow: 2px 1px brown;
+    animation: animatieOO;
+    animation-duration: 3s;
+    background-image: url(https://as2.ftcdn.net/v2/jpg/01/16/74/01/1000_F_116740102_GOwrBK4TyYYNKihtQct72fbtOHFd2xv9.jpg);
+    background-size:500%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  @keyframes animatieOO
+{
+    0%{opacity: 0%}
+    100%{opacity: 100%}
+}
+.buton {
+    border-radius: 4px;
+    background-color: red;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    align-self: center;
+    font-family: 'Roboto';
+    animation-name: pulse;
+    animation-duration: 2s;
+    /* align:center; */
+    text-align:center;
+    /* font-family:'Fira Sans'; */
+
+  }
+  a{
+      align-self: center;
+      text-align: center;
+      display:flex;
+      filter: drop-shadow(2px 0px 5px red);
+      align-self: center;
+      flex-direction: column;
+      font-family:'Fira Sans';
+  }
+  .buton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-family:'Fira Sans';
+    align-self: center;
+    text-align: center;
+    filter: drop-shadow(2px 0px 5px red);
+    transition: 0.5s;
+  }
+  
+  .buton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .buton:hover span {
+    padding-right: 25px;
+  }
+  
+  .buton:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--hover); }
+}
+@keyframes animationbb{
+    0%{color: red}
+    50%{color: blue}
+    100%{color: green}
+}
+.text2{
+    animation:ann 2s linear infinite;
+}
+.text3{
+    animation: animatieD 2s linear;
+}
+/* .text4{
+    animation: animu 2s linear infinite;
+} */
+#myBtn{
+    font-family:'Roboto';
+    background-color: red;
+    color:white;    
+    border:2px solid black;
+}
+#myBtn1{
+    font-family:'Roboto';
+    background-color: red;
+    color:white;    
+    border:2px solid black;
+}
+#myBtn2{
+    font-family:'Roboto';
+    background-color: red;
+    color:white;    
+    border:2px solid black;
+}
+#myBtn3{
+    font-family:'Roboto';
+    background-color: red;
+    color:white;    
+    border:2px solid black;
+}
+@media screen and (max-width: 550px) {
+    .grid{
+        display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: 1rem;
+    }
+  }
